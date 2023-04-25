@@ -140,111 +140,112 @@ const Main = () => {
                     Most Prefferred Hotel For India - Africa Conclave 2022
                 </h3>
                 <div className="form_input">
-                    <form name="contact" method="POST" data-netlify="true">
+                    <form name="contact form" method="post" data-netlify="true" onSubmit="submit">
+                        <input type="hidden" name="form-name" value="contact form" />
                         <h3>Room Reservation Request Form</h3>
-                        <div className="main_form"> 
-                        <label>Hotel Type:</label>
-                        <br></br>
-                        <select id="hotel" name="Hotel">
-                            <option>--Select Hotel Type-- </option>
-                            <option value="Taj Palace">Taj Palace</option>
-                            <option value="Royal Plaza">Royal Plaza</option>
-                            <option value="The Grand">The Grand</option>
-                            <option value="Le Meridien">Le Meridien</option>
-                            <option value="Andaz">Andaz</option>
-                        </select>
+                        <div className="main_form">
+                            <label>Hotel Type:</label>
+                            <br></br>
+                            <select id="hotel" name="Hotel">
+                                <option>--Select Hotel Type-- </option>
+                                <option value="Taj Palace">Taj Palace</option>
+                                <option value="Royal Plaza">Royal Plaza</option>
+                                <option value="The Grand">The Grand</option>
+                                <option value="Le Meridien">Le Meridien</option>
+                                <option value="Andaz">Andaz</option>
+                            </select>
 
-                        <br></br>
-                        <label>No Of Rooms: </label>
-                        <br></br>
-                        <select id="count_room" name="No_Of_Room">
-                            <option>--No Of Rooms-- </option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                            <option value="9">9</option>
-                            <option value="10">10</option>
-                        </select>
-                        <br></br>
-                        <label>Type of Rooms: </label>
-                        <br></br>
-                        <select id="type_of_room" name="Type_of_Room">
-                            <option>--Type of Rooms-- </option>
-                            <option value="Single">Single</option>
-                            <option value="Double">Double</option>
-                        </select>
+                            <br></br>
+                            <label>No Of Rooms: </label>
+                            <br></br>
+                            <select id="count_room" name="No_Of_Room">
+                                <option>--No Of Rooms-- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <br></br>
+                            <label>Type of Rooms: </label>
+                            <br></br>
+                            <select id="type_of_room" name="Type_of_Room">
+                                <option>--Type of Rooms-- </option>
+                                <option value="Single">Single</option>
+                                <option value="Double">Double</option>
+                            </select>
 
-                        <br></br>
-                        <label>Guest per Room:
-                        </label>
-                        <br></br>
-                        <select id="guest_per_room" name="Guest_per_Room">
-                            <option>--No Of Guest per Room-- </option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                        </select>
-                        <br></br>
-                        <label>CheckIn: <span className="required_field">*</span>
-                        </label>
-                        <br></br>
+                            <br></br>
+                            <label>Guest per Room:
+                            </label>
+                            <br></br>
+                            <select id="guest_per_room" name="Guest_per_Room">
+                                <option>--No Of Guest per Room-- </option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                            </select>
+                            <br></br>
+                            <label>CheckIn: <span className="required_field">*</span>
+                            </label>
+                            <br></br>
 
-                        <input type="date" required id="birthday" name="CheckIn" />
-                        <br></br>
+                            <input type="date" required id="birthday" name="CheckIn" />
+                            <br></br>
 
-                        <label>CheckOut:<span className="required_field">*</span>
-                        </label>
-                        <br></br>
-                        <input type="date" required id="birthday" name="CheckOut" />
-                        <br></br>
-                        <label>Tranasportion Required: <span className="required_field">*</span>
-                        </label>
-                        <br></br>
-                        <select id="guest_per_room" name="Guest_per_Room"  required>
-                            <option>--Select Yes or NO-- </option>
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
-                        </select>
+                            <label>CheckOut:<span className="required_field">*</span>
+                            </label>
+                            <br></br>
+                            <input type="date" required id="birthday" name="CheckOut" />
+                            <br></br>
+                            <label>Tranasportion Required: <span className="required_field">*</span>
+                            </label>
+                            <br></br>
+                            <select id="guest_per_room" name="Guest_per_Room" required>
+                                <option>--Select Yes or NO-- </option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
 
-                        <br></br>
-                        <label>Guest Name: <span className="required_field">*</span></label>
-                        <br></br>
-                        <input type="text" required placeholder="Name" name="Name" />
+                            <br></br>
+                            <label>Guest Name: <span className="required_field">*</span></label>
+                            <br></br>
+                            <input type="text" required placeholder="Name" name="Name" />
 
-                        <br></br>
-                        <label>Company Name:</label>
-                        <br></br>
-                        <input type="text" placeholder="Company Name" name="Company Name" />
-                        <br></br>
-                        <label>Address:</label>
-                        <br></br>
-                        <input type="text" placeholder="Address" name="Address" />
-                        <br></br>
-                        <label>GST No:
-                        </label>
-                        <input type="text" placeholder="GST NO" name="Gst_no" />
-                        <br></br>
-                        <label>Flight Details:</label>
-                        <input type="text" placeholder="Flight Details" name="Flight_details" />
+                            <br></br>
+                            <label>Company Name:</label>
+                            <br></br>
+                            <input type="text" placeholder="Company Name" name="Company Name" />
+                            <br></br>
+                            <label>Address:</label>
+                            <br></br>
+                            <input type="text" placeholder="Address" name="Address" />
+                            <br></br>
+                            <label>GST No:
+                            </label>
+                            <input type="text" placeholder="GST NO" name="Gst_no" />
+                            <br></br>
+                            <label>Flight Details:</label>
+                            <input type="text" placeholder="Flight Details" name="Flight_details" />
 
-                        <br></br>
-                        <label>Destination:
-                        </label>
-                        <input type="text" placeholder="Destination" name="Destination" />
-                        <br></br>
-                        <label>Email: <span className="required_field">*</span></label>
-                        <input type="email" required placeholder="Enter Your Email..." name="Email" />
+                            <br></br>
+                            <label>Destination:
+                            </label>
+                            <input type="text" placeholder="Destination" name="Destination" />
+                            <br></br>
+                            <label>Email: <span className="required_field">*</span></label>
+                            <input type="email" required placeholder="Enter Your Email..." name="Email" />
 
-                        <br></br>
-                        <label>Phone: <span className="required_field">*</span></label>
-                        <input type="tel" required placeholder="Phone..." name="Phone" />
+                            <br></br>
+                            <label>Phone: <span className="required_field">*</span></label>
+                            <input type="tel" required placeholder="Phone..." name="Phone" />
 
-                        <br></br>
-                        <button type="submit" className="submit">Submit</button>
+                            <br></br>
+                            <button type="submit" className="submit">Submit</button>
                         </div>
                     </form>
                 </div>
